@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="493cbe6b-92fd-438b-848b-fcfc62f8b5a5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/action.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,7 @@
       <workItem from="1789291517462" duration="39000" />
       <workItem from="1789291566329" duration="129000" />
       <workItem from="1789291706050" duration="198000" />
-      <workItem from="1789291915683" duration="535000" />
+      <workItem from="1789291915683" duration="1239000" />
     </task>
     <servers />
   </component>
