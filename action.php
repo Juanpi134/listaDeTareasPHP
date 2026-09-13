@@ -96,3 +96,26 @@ function editarTarea(&$tareas, $idBuscado, $nuevaDescripcion) {
 
     return false;
 }
+
+
+//logica para agrupar tareas pendientes
+function obtenerPendientes($tareas) {
+
+    $pendientes = [];
+
+    foreach ($tareas as $tarea) {
+
+        if ($tarea["estado"] == "pendiente") {
+            $pendientes[] = $tarea;
+        }
+    }
+
+    return $pendientes;
+}
+
+
+$pendientes = obtenerPendientes($tareas);
+
+foreach ($pendientes as $tarea) {
+    echo $tarea["descripcion"] . "<br>";
+}
