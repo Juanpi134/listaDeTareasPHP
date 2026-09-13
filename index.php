@@ -19,8 +19,7 @@
         <option value="Completada">Completada</option>
     </select>
     <input type="submit" value="Enviar">
-
-
+</form>
     <!--  Creación de un formulario para que el usuario tenga que buscar una tarea  -->
     <form action="action.php" method="POST">
         <label for="buscar">ID de la tarea:</label>
@@ -34,7 +33,15 @@
         <input type="number" name="eliminar">
         <button type="submit">Eliminar</button>
     </form>
+
+<!--  Creación de un formulario para que el usuario tenga que editar una tarea  -->
+<form action="action.php" method="POST">
+    <label>ID de la tarea:</label>
+    <input type="number" name="eliminar">
+    <input type="text" name="nueva_descripcion" placeholder="Nueva descripción">
+    <button type="submit">Eliminar</button>
 </form>
+
 </body>
 </html>
 

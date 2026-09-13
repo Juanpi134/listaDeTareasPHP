@@ -64,3 +64,35 @@ function eliminarTarea(&$tareas, $idBuscado) {
 
     return false;
 }
+
+
+if (isset($_POST["editar_id"])) {
+
+    $idBuscado = $_POST["editar_id"];
+    $nuevaDescripcion = $_POST["nueva_descripcion"];
+
+    $editada = editarTarea($tareas, $idBuscado, $nuevaDescripcion);
+
+    if ($editada) {
+        echo "Tarea modificada correctamente";
+    } else {
+        echo "No existe una tarea con ese ID";
+    }
+}
+
+
+
+function editarTarea(&$tareas, $idBuscado, $nuevaDescripcion) {
+
+    foreach ($tareas as $indice => $tarea) {
+
+        if ($tarea["id"] == $idBuscado) {
+
+            $tareas[$indice]["descripcion"] = $nuevaDescripcion;
+
+            return true;
+        }
+    }
+
+    return false;
+}
