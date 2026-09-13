@@ -19,6 +19,14 @@
         <option value="Completada">Completada</option>
     </select>
     <input type="submit" value="Enviar">
+
+
+    <!--  Creación de un formulario para que el usuario tenga que buscar una tarea  -->
+    <form action="action.php" method="POST">
+        <label for="buscar">ID de la tarea:</label>
+        <input type="number" name="buscar" id="buscar">
+        <button type="submit">Buscar</button>
+    </form>
 </form>
 </body>
 </html>
