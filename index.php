@@ -27,6 +27,13 @@
         <input type="number" name="buscar" id="buscar">
         <button type="submit">Buscar</button>
     </form>
+
+    <!--  Creación de un formulario para que el usuario tenga que eliminar una tarea  -->
+    <form action="action.php" method="POST">
+        <label>ID de la tarea:</label>
+        <input type="number" name="eliminar">
+        <button type="submit">Eliminar</button>
+    </form>
 </form>
 </body>
 </html>
